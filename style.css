@@ -409,3 +409,41 @@ body {
 .item-price.wrap { /* Add class="item-price wrap" in HTML if needed for specific items */
     white-space: normal;
 }
+
+/* Responsive styles to ensure proper alignment in mobile view */
+@media (max-width: 768px) {
+    .menu-item-header,
+    .menu-item {
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        justify-content: space-between; /* Maintain spacing */
+        padding: 6px 0; /* Adjust padding for smaller screens */
+    }
+
+    .header-name, .item-name {
+        flex-basis: 100%; /* Full width for names */
+        text-align: left; /* Align text to the left */
+        margin-bottom: 4px; /* Add spacing between rows */
+    }
+
+    .header-qty, .item-qty,
+    .header-price, .item-price {
+        flex-basis: 50%; /* Split remaining space between qty and price */
+        text-align: right; /* Align text to the right */
+    }
+
+    .menu-title-banner {
+        font-size: 2em; /* Adjust title size for smaller screens */
+    }
+
+    .category-title {
+        font-size: 1.2em; /* Adjust category title size */
+    }
+
+    .menu-item {
+        font-size: 0.9em; /* Reduce font size for items */
+    }
+
+    .footer-logo {
+        font-size: 2.5em; /* Adjust footer logo size */
+    }
+}
