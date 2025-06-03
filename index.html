@@ -3,55 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PX Extracts Menu</title>
+    <title>PAX Extracts</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Responsive styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .menu-header, .service-banner, .logo-bar, .menu-title-banner, .sub-banner, .category, .menu-footer {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .logo-main img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .contact-info {
-            font-size: 0.9em;
-        }
-
-        .menu-item {
-            font-size: 0.9em;
-        }
-
-        .category-title {
-            font-size: 1.2em;
-        }
-
-        @media (max-width: 768px) {
-            .menu-header {
-                flex-direction: column;
-            }
-
-            .contact-info {
-                margin-top: 10px;
-            }
-
-            .category-title {
-                font-size: 1em;
-            }
-
-            .menu-item {
-                font-size: 0.8em;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -75,111 +28,184 @@
                 OPEN FROM NOON - 2AM
             </div>
         </header>
-
         <section class="service-banner">
             NYC'S FINEST QUALITY DELIVERY SERVICE
         </section>
 
         <section class="logo-bar">
-            <span>NYZ</span>
-            <span>🐘</span> <span>THE TEN CO.</span> <span>🌳</span> <span>🔥</span> </section>
+            <span>NYZ</span> <span>🐘</span> <span>THE TEN CO.</span> <span>🌳</span> <span>🔥</span>
+        </section>
 
         <section class="menu-title-banner">
             FLOWER MENU
         </section>
 
-        <section class="sub-banner">
-            SMALL BATCH HOUSE INDOOR OZs
-        </section>
-
         <div class="category">
-            <h2 class="category-title">SATIVAS</h2>
-            <div class="menu-item">WHITE WIDOW - <span>$280</span></div>
-            <div class="menu-item">BLUE DREAM - <span>$280</span></div>
-            <div class="menu-item">JACK HERER - <span>$280</span></div>
-            <div class="menu-item">PINEAPPLE HAZE - <span>$300</span></div>
-            <div class="menu-item">DURBAN POISON - <span>$300</span></div>
-            <div class="menu-item">RAINBOW SKITTLEZ - <span>$300</span></div>
-            <div class="menu-item">LEMON HAZE - <span>$300</span></div>
-            <div class="menu-item">EAST COAST SOUR D - <span>$325</span></div>
-            <div class="menu-item">BLAZER - <span>$350</span></div>
+            <h2 class="category-title">STRAINS (OUNCE PRICES)</h2>
+            <div class="menu-item-header">
+                <span class="header-name">Strain Name</span>
+                <span class="header-price">Price (oz)</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Melon Nishi</span> <span class="item-price">$450</span></div>
+            <div class="menu-item"><span class="item-name">Unknown Chem</span> <span class="item-price">$420</span></div>
+            <div class="menu-item"><span class="item-name">Beluga Caviar</span> <span class="item-price">$400</span></div>
+            <div class="menu-item"><span class="item-name">Django</span> <span class="item-price">$300</span></div>
+            <div class="menu-item"><span class="item-name">Sour Peels</span> <span class="item-price">$300</span></div>
+            <div class="menu-item"><span class="item-name">Old Timers Haze</span> <span class="item-price">$280</span></div>
+            <div class="menu-item"><span class="item-name">Swiss Tsunami</span> <span class="item-price">$280</span></div>
+            <div class="menu-item"><span class="item-name">Mother Tongue</span> <span class="item-price">$260</span></div>
+            <div class="menu-item"><span class="item-name">White Rhino</span> <span class="item-price">$240</span></div>
+            <div class="menu-item"><span class="item-name">Pop Latto</span> <span class="item-price">$200</span></div>
+            <div class="menu-item"><span class="item-name">Middle Fork X PE</span> <span class="item-price">$200</span></div>
+            <div class="menu-item"><span class="item-name">White Gumbo</span> <span class="item-price">$180</span></div>
+            <div class="menu-item"><span class="item-name">Neon Sunshine</span> <span class="item-price">$160</span></div>
+            <div class="menu-item"><span class="item-name">Albino</span> <span class="item-price">$150</span></div>
+            <div class="menu-item"><span class="item-name">Purple Pain</span> <span class="item-price">$120</span></div>
+            <div class="menu-item"><span class="item-name">Apple Fritters</span> <span class="item-price">$100</span></div>
         </div>
 
         <div class="divider"></div>
 
         <div class="category">
-            <h2 class="category-title">HYBRIDS</h2>
-            <div class="menu-item">SOUR CHEM - <span>$200</span></div>
-            <div class="menu-item">GUAVA N LATAR - <span>$280</span></div>
-            <div class="menu-item">UNICORN MILK - <span>$300</span></div>
-            <div class="menu-item">BLUEBERRY SKITTLEZ - <span>$300</span></div>
-            <div class="menu-item">GREASE MONKEY #11 - <span>$300</span></div>
-            <div class="menu-item">PASSIONFRUIT RIOJA SUNSET - <span>$325</span></div>
-            <div class="menu-item">Z X RED SMOOTHIE - <span>$350</span></div>
+            <h2 class="category-title">WAX</h2>
+            <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-qty">Qty</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Handmade Hash</span> <span class="item-qty">2g</span> <span class="item-price">$200</span></div>
+            <div class="menu-item"><span class="item-name">WCA</span> <span class="item-qty">2g</span> <span class="item-price">$180</span></div>
+            <div class="menu-item"><span class="item-name">Hash Dept.</span> <span class="item-qty">2g</span> <span class="item-price">$160</span></div>
+            <div class="menu-item"><span class="item-name">Bonsai Tree Co</span> <span class="item-qty">2g</span> <span class="item-price">$160</span></div>
+            <div class="menu-item"><span class="item-name">Feel Good</span> <span class="item-qty">2g</span> <span class="item-price">$160</span></div>
+            <div class="menu-item"><span class="item-name">La FF Piatella</span> <span class="item-qty">1g</span> <span class="item-price">$90</span></div>
+            <div class="menu-item"><span class="item-name">Third Sift Resin</span> <span class="item-qty">1g</span> <span class="item-price">$85</span></div>
+            <div class="menu-item"><span class="item-name">La Family Farms</span> <span class="item-qty">1g</span> <span class="item-price">$80</span></div>
+            <div class="menu-item"><span class="item-name">710 Tier 2/3</span> <span class="item-qty">1g</span> <span class="item-price">$60</span></div>
+            <div class="menu-item"><span class="item-name">House Rosin</span> <span class="item-qty">1g</span> <span class="item-price">$50 (2 for $80)</span></div>
+            <div class="menu-item"><span class="item-name">Helios Live Resin</span> <span class="item-qty">1g</span> <span class="item-price">$40</span></div>
+            <div class="menu-item"><span class="item-name">House Resin</span> <span class="item-qty">1g</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Shatter</span> <span class="item-qty">1g</span> <span class="item-price">$25 (Q $100)</span></div>
         </div>
 
         <div class="divider"></div>
 
         <div class="category">
-            <h2 class="category-title">INDICAS</h2>
-            <div class="menu-item">WHIPPED CHERRIES - <span>$280</span></div>
-            <div class="menu-item">ROCKET FUEL - <span>$280</span></div>
-            <div class="menu-item">PINEAPPLE FRITTERS - <span>$280</span></div>
-            <div class="menu-item">Z X OG - <span>$300</span></div>
-            <div class="menu-item">BUBBLEGUM Z - <span>$300</span></div>
-            <div class="menu-item">PURPLE PANTIES - <span>$300</span></div>
-            <div class="menu-item">KAMIKAZEE - <span>$325</span></div>
-            <div class="menu-item">S STAR CANDY - <span>$325</span></div>
-            <div class="menu-item">FROZEN GRAPES - <span>$325</span></div>
+            <h2 class="category-title">DISPOSABLES</h2>
+            <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-qty">Qty</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Grape God</span> <span class="item-qty">.5g</span> <span class="item-price">$50</span></div>
+            <div class="menu-item"><span class="item-name">Switch V4</span> <span class="item-qty">1g</span> <span class="item-price">$30 (2 for $50)</span></div>
+            <div class="menu-item"><span class="item-name">Switch V4</span> <span class="item-qty">2g</span> <span class="item-price">$40</span></div>
+            <div class="menu-item"><span class="item-name">Switch Glow</span> <span class="item-qty">2g</span> <span class="item-price">$40 (2 for $60)</span></div>
+        </div>
+        
+        <div class="divider"></div>
+
+        <div class="category">
+            <h2 class="category-title">STIIIZY PODS</h2>
+            <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-qty">Qty</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Stiiizy Pods</span> <span class="item-qty">1g</span> <span class="item-price">$40 (5 for $170)</span></div>
         </div>
 
         <div class="divider thick"></div>
 
         <div class="category">
             <h2 class="category-title large-title">THE TEN CO</h2>
-            <div class="menu-item">COOKIES - <span>$75 PER 8TH</span></div>
-            <div class="menu-item">BLUE ZUSHI V3 - <span>$130 PER 7G JAR</span></div>
+            <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Melon Nishi</span> <span class="item-price">$120 Q</span></div>
+            <div class="menu-item"><span class="item-name">Unknown</span> <span class="item-price">$60 8th / $100 Q</span></div>
+            <div class="menu-item"><span class="item-name">Beluga</span> <span class="item-price">$60 8th / $100 Q</span></div>
+            <div class="menu-item"><span class="item-name">1.5g Preroll</span> <span class="item-price">$30</span></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="category">
+            <h2 class="category-title">SEALED DISPENSARY 8THS</h2>
+            <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Punkez (8th & Preroll)</span> <span class="item-price">$40 (2 for $70)</span></div>
+            <div class="menu-item"><span class="item-name">Gumbo</span> <span class="item-price">$40</span></div>
+            <div class="menu-item"><span class="item-name">To The Moon</span> <span class="item-price">$40</span></div>
+        </div>
+        
+        <div class="divider"></div>
+
+        <div class="category">
+            <h2 class="category-title">EDIBLES</h2>
+             <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-qty">Strength</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">To The Moon</span> <span class="item-qty">1000mg</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Cereal Bars</span> <span class="item-qty">600mg</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Sugar High</span> <span class="item-qty">500mg</span> <span class="item-price">$40 (2 for $60)</span></div>
+            <div class="menu-item"><span class="item-name">LAFF Gummies</span> <span class="item-qty">100mg</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Camino</span> <span class="item-qty">100mg</span> <span class="item-price">2 for $50</span></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="category">
+            <h2 class="category-title">PREROLLS</h2>
+            <div class="menu-item-header">
+                <span class="header-name">Item</span>
+                <span class="header-qty">Details</span>
+                <span class="header-price">Price</span>
+            </div>
+            <div class="menu-item"><span class="item-name">Back Pack</span> <span class="item-qty">1g</span> <span class="item-price">2 for $20</span></div>
+            <div class="menu-item"><span class="item-name">Single Shot</span> <span class="item-qty">1g</span> <span class="item-price">$20</span></div>
+            <div class="menu-item"><span class="item-name">The Ten Co</span> <span class="item-qty">1.5g</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Bonsai Tree Co</span> <span class="item-qty">1.5g</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Stiiizy 40’s</span> <span class="item-qty">(5 x .5g)</span> <span class="item-price">$30</span></div>
+            <div class="menu-item"><span class="item-name">Switch Boutiq</span> <span class="item-qty">(5 x .5g)</span> <span class="item-price">$35</span></div>
+            <div class="menu-item"><span class="item-name">Fidel’s</span> <span class="item-qty">(5 x .7g)</span> <span class="item-price">$40</span></div>
+            <div class="menu-item"><span class="item-name">La Family Farms</span> <span class="item-qty">(8 x .5g)</span> <span class="item-price">$50</span></div>
+            <div class="menu-item"><span class="item-name">Back Pack Boyz Hashhole</span> <span class="item-qty"></span> <span class="item-price">$50</span></div>
         </div>
 
         <div class="divider thick"></div>
 
-        <div class="category">
-            <h2 class="category-title large-title">ELEPHANT'S GROWTH - QUARTER OZ</h2>
-            <div class="menu-item">WOLF TOOTH #32 - <span>$350</span></div>
-            <div class="menu-item">IYKYK #5 - <span>$350</span></div>
-            <div class="menu-item">BLUE IVORY #23 - <span>$350</span></div>
-            <div class="menu-item">SOUR MELON #10 - <span>$350</span></div>
-            <div class="menu-item">ZUYAQUI #11 - <span>$350</span></div>
-            <div class="menu-item">AMALFI COAST #16 - <span>$350</span></div>
-            <div class="menu-item">MOMOCHA - <span>$350</span></div>
-            <div class="menu-item">SUPER GREMLIN #21 - <span>$350</span></div>
-            <div class="menu-item">OG KUSH - <span>$400</span></div>
-        </div>
+        <section class="notes-section">
+            <p>Flower is in ounce prices. If you need less, just let us know what strain you're interested in and how much you're looking for.</p>
+            <p>Spend $180 or more and receive a FREE "To The Moon" edible!</p>
+            <p>Spend $300 or more and receive a FREE "Punkiez" 8th!</p>
+        </section>
 
         <footer class="menu-footer">
-            <div class="footer-logo">
-                PX 
-                <span>Extracts</span>
-            </div>
+            <div class="footer-logo"> KLINIC <span>NEW YORK</span> </div>
         </footer>
-
     </div>
 
     <script>
+        // JavaScript for age verification (Remains the same)
         document.addEventListener('DOMContentLoaded', function() {
             const ageOverlay = document.getElementById('age-verification-overlay');
             const menuContainer = document.getElementById('menu-container');
             const yesButton = document.getElementById('age-yes');
             const noButton = document.getElementById('age-no');
 
-            // Check if age has been verified in this session
             if (sessionStorage.getItem('ageVerifiedKlinicMenu') === 'true') {
                 ageOverlay.style.display = 'none';
                 menuContainer.style.display = 'block';
-                document.body.style.backgroundColor = '#ffffff'; // Show white background for menu
+                document.body.style.backgroundColor = '#ffffff'; 
             } else {
-                ageOverlay.style.display = 'flex'; // Show the pop-up
-                document.body.style.backgroundColor = '#000000'; // Dark background behind popup
+                ageOverlay.style.display = 'flex'; 
+                document.body.style.backgroundColor = '#000000'; 
             }
 
             yesButton.addEventListener('click', function() {

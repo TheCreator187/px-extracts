@@ -1,3 +1,97 @@
+/* ... (all your previous CSS) ... */
+
+/* Styling for the new menu item headers (e.g., Strain Name | Price (oz)) */
+.menu-item-header {
+    font-size: 0.8em; /* Slightly smaller than menu items */
+    line-height: 1.6;
+    font-weight: bold;
+    color: #555555; /* Dimmer text color for header */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cccccc; /* Light underline for the header row */
+    text-transform: none; /* Keep as is if you want it uppercase, or set to none */
+}
+
+.menu-item-header span {
+    font-weight: bold;
+}
+
+/* Adjustments for menu items that might have three parts (Name, Qty, Price) */
+.menu-item {
+    font-size: 1em;
+    line-height: 1.8;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; /* This works well for 2 items */
+    align-items: center; /* Vertically align items if lines wrap */
+    margin-bottom: 2px; /* Small gap between items */
+}
+
+/* If you have three distinct columns (Name, Qty, Price) and want more control:
+   You can target the spans within .menu-item. For example:
+*/
+.menu-item span:nth-child(1) { /* Targets the first span (e.g., Qty) */
+    flex-basis: 15%; /* Example: give it a specific width percentage */
+    text-align: center;
+    font-weight: normal; /* Example: if qty is less bold */
+    color: #333;
+}
+.menu-item span:nth-child(2) { /* Targets the second span (e.g., Price) */
+    flex-basis: 35%; /* Example */
+    text-align: right;
+    font-weight: bold;
+}
+/* The above :nth-child styling is optional.
+   The simpler structure in HTML (item name directly, then spans for other parts)
+   often works well with the default justify-content: space-between on .menu-item,
+   especially if the middle part (qty) is short.
+   For your current data, the default space-between with explicit spans for pricing
+   (and qty where needed) as implemented in the HTML should be largely sufficient.
+   If you had a very strict tabular layout, you might use CSS Grid on .menu-item.
+*/
+
+
+/* Styling for the new promotional notes section */
+.notes-section {
+    padding: 20px 25px; /* More padding for notes */
+    text-align: left;   /* Align text to the left for readability */
+    font-size: 0.9em;
+    font-weight: normal; /* Normal weight for notes */
+    line-height: 1.7;
+    color: #333333; /* Dark grey for notes, not pure black */
+    background-color: #f9f9f9; /* Very light grey background for emphasis */
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    margin: 20px 0;
+    text-transform: none; /* Notes are usually not all uppercase */
+}
+
+.notes-section p {
+    margin-bottom: 12px;
+}
+
+.notes-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Ensure menu items with complex pricing are clear */
+.menu-item span { /* This targets the price part, which is in a span */
+    font-weight: bold;
+    white-space: nowrap; /* Try to keep price on one line if possible */
+}
+
+/* Fine-tune if item names are too long and wrap awkwardly with price */
+.menu-item > *:first-child { /* Targets the item name (not in a span) */
+    margin-right: 10px; /* Add some space between item name and its details/price */
+    flex-grow: 1; /* Allow item name to take available space */
+}
+
+
+/* ... (rest of your CSS, including @media queries) ... */
+
 /* General Body Styles */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Common sans-serif, similar to image */
