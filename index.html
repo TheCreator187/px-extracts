@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PX Extracts Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Responsive styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-header, .service-banner, .logo-bar, .menu-title-banner, .sub-banner, .category, .menu-footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo-main img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+        }
+
+        .menu-item {
+            font-size: 0.9em;
+        }
+
+        .category-title {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .menu-header {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                margin-top: 10px;
+            }
+
+            .category-title {
+                font-size: 1em;
+            }
+
+            .menu-item {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="age-verification-overlay">
+        <div id="age-verification-popup">
+            <h2>Are you 21 or older?</h2>
+            <p>You must be 21 years or older to view this menu.</p>
+            <button id="age-yes">Yes, I am 21+</button>
+            <button id="age-no">No, I am not</button>
+        </div>
+    </div>
+
+    <div id="menu-container" style="display: none;">
+        <header class="menu-header">
+            <div class="logo-main">
+                <img src="/assets/logo.jpg" alt="THE KLINIC Logo" style="max-width: 250px; height: auto;">
+            </div>
+            <div class="contact-info">
+                @igHandle<br>
+                917-111-1111<br>
+                OPEN FROM NOON - 2AM
+            </div>
+        </header>
+
+        <section class="service-banner">
+            NYC'S FINEST QUALITY DELIVERY SERVICE
+        </section>
+
+        <section class="logo-bar">
+            <span>NYZ</span>
+            <span>🐘</span> <span>THE TEN CO.</span> <span>🌳</span> <span>🔥</span> </section>
+
+        <section class="menu-title-banner">
+            FLOWER MENU
+        </section>
+
+        <section class="sub-banner">
+            SMALL BATCH HOUSE INDOOR OZs
+        </section>
+
+        <div class="category">
+            <h2 class="category-title">SATIVAS</h2>
+            <div class="menu-item">WHITE WIDOW - <span>$280</span></div>
+            <div class="menu-item">BLUE DREAM - <span>$280</span></div>
+            <div class="menu-item">JACK HERER - <span>$280</span></div>
+            <div class="menu-item">PINEAPPLE HAZE - <span>$300</span></div>
+            <div class="menu-item">DURBAN POISON - <span>$300</span></div>
+            <div class="menu-item">RAINBOW SKITTLEZ - <span>$300</span></div>
+            <div class="menu-item">LEMON HAZE - <span>$300</span></div>
+            <div class="menu-item">EAST COAST SOUR D - <span>$325</span></div>
+            <div class="menu-item">BLAZER - <span>$350</span></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="category">
+            <h2 class="category-title">HYBRIDS</h2>
+            <div class="menu-item">SOUR CHEM - <span>$200</span></div>
+            <div class="menu-item">GUAVA N LATAR - <span>$280</span></div>
+            <div class="menu-item">UNICORN MILK - <span>$300</span></div>
+            <div class="menu-item">BLUEBERRY SKITTLEZ - <span>$300</span></div>
+            <div class="menu-item">GREASE MONKEY #11 - <span>$300</span></div>
+            <div class="menu-item">PASSIONFRUIT RIOJA SUNSET - <span>$325</span></div>
+            <div class="menu-item">Z X RED SMOOTHIE - <span>$350</span></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="category">
+            <h2 class="category-title">INDICAS</h2>
+            <div class="menu-item">WHIPPED CHERRIES - <span>$280</span></div>
+            <div class="menu-item">ROCKET FUEL - <span>$280</span></div>
+            <div class="menu-item">PINEAPPLE FRITTERS - <span>$280</span></div>
+            <div class="menu-item">Z X OG - <span>$300</span></div>
+            <div class="menu-item">BUBBLEGUM Z - <span>$300</span></div>
+            <div class="menu-item">PURPLE PANTIES - <span>$300</span></div>
+            <div class="menu-item">KAMIKAZEE - <span>$325</span></div>
+            <div class="menu-item">S STAR CANDY - <span>$325</span></div>
+            <div class="menu-item">FROZEN GRAPES - <span>$325</span></div>
+        </div>
+
+        <div class="divider thick"></div>
+
+        <div class="category">
+            <h2 class="category-title large-title">THE TEN CO</h2>
+            <div class="menu-item">COOKIES - <span>$75 PER 8TH</span></div>
+            <div class="menu-item">BLUE ZUSHI V3 - <span>$130 PER 7G JAR</span></div>
+        </div>
+
+        <div class="divider thick"></div>
+
+        <div class="category">
+            <h2 class="category-title large-title">ELEPHANT'S GROWTH - QUARTER OZ</h2>
+            <div class="menu-item">WOLF TOOTH #32 - <span>$350</span></div>
+            <div class="menu-item">IYKYK #5 - <span>$350</span></div>
+            <div class="menu-item">BLUE IVORY #23 - <span>$350</span></div>
+            <div class="menu-item">SOUR MELON #10 - <span>$350</span></div>
+            <div class="menu-item">ZUYAQUI #11 - <span>$350</span></div>
+            <div class="menu-item">AMALFI COAST #16 - <span>$350</span></div>
+            <div class="menu-item">MOMOCHA - <span>$350</span></div>
+            <div class="menu-item">SUPER GREMLIN #21 - <span>$350</span></div>
+            <div class="menu-item">OG KUSH - <span>$400</span></div>
+        </div>
+
+        <footer class="menu-footer">
+            <div class="footer-logo">
+                PX 
+                <span>Extracts</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ageOverlay = document.getElementById('age-verification-overlay');
+            const menuContainer = document.getElementById('menu-container');
+            const yesButton = document.getElementById('age-yes');
+            const noButton = document.getElementById('age-no');
+
+            // Check if age has been verified in this session
+            if (sessionStorage.getItem('ageVerifiedKlinicMenu') === 'true') {
+                ageOverlay.style.display = 'none';
+                menuContainer.style.display = 'block';
+                document.body.style.backgroundColor = '#ffffff'; // Show white background for menu
+            } else {
+                ageOverlay.style.display = 'flex'; // Show the pop-up
+                document.body.style.backgroundColor = '#000000'; // Dark background behind popup
+            }
+
+            yesButton.addEventListener('click', function() {
+                sessionStorage.setItem('ageVerifiedKlinicMenu', 'true');
+                ageOverlay.style.display = 'none';
+                menuContainer.style.display = 'block';
+                document.body.style.backgroundColor = '#ffffff';
+            });
+
+            noButton.addEventListener('click', function() {
+                const popup = document.getElementById('age-verification-popup');
+                popup.innerHTML = '<h2>Access Denied</h2><p>You must be 21 or older to view this menu.</p><p style="font-size:0.8em; color:#ccc;">Please close this window or try again later.</p>';
+            });
+        });
+    </script>
+
+</body>
+</html>
